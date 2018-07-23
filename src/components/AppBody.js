@@ -16,6 +16,7 @@ class AppBody extends Component {
             display: 'flex',
             justifyContent: 'center',
             alignItems: 'center',
+            ...this.props.style,
           }}
         >
           {this.props.children}

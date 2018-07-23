@@ -98,7 +98,10 @@ li > a:before {
   -webkit-transition: all 0.3s ease-in-out 0s;
   transition: all 0.3s ease-in-out 0s;
 }
-
+.hd {
+  display: hidden;
+  visibility: hidden;
+}
 li > a:hover:before {
   visibility: visible;
   -webkit-transform: scaleX(1);

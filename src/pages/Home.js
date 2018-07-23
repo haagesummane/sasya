@@ -1,13 +1,18 @@
 import AppBody from 'components/AppBody';
 import React, { Component } from 'react';
 import 'css/Home.css';
-
+import logo from 'img/sasya.png';
 class Home extends Component {
   render() {
     return (
       <AppBody active={this.props.active}>
-        <div style={{ height: '60%', textAlign: 'center', background: 'rgba(255,255,255,0.5)' }}>
-          <h1>Welcome to Sasya Nursery</h1>
+        <div style={{ height: '60%', textAlign: 'center' }}>
+          <img
+            src={logo}
+            style={{ width: '400px', background: 'rgba(255,255,255,1)', borderRadius: '50%' }}
+            alt="Sasya Nursery"
+          />
+          {/* <h1> Sasya Nursery</h1> */}
           <ul className="cb-slideshow">
             <li>
               <span>Image 01</span>

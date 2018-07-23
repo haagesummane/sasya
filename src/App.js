@@ -9,7 +9,7 @@ import Plants from 'pages/Plants';
 import Services from 'pages/Services';
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-
+//#745cf9
 const routes = [
   ['/', 'Home'],
   ['/about', 'About Us'],
@@ -48,7 +48,7 @@ class App extends Component {
   componentDidUpdate() {
     var x = document.getElementById('cont');
     var y = document.getElementById('navdiv');
-    if (x && y) x.style.marginTop = y.clientHeight + 5 + 'px';
+    if (x && y) x.style.marginTop = y.clientHeight + 2 + 'px';
   }
   updateDimensions() {
     var w = window,

@@ -9,7 +9,16 @@ class AppBody extends Component {
         <header>
           <Nav active={this.props.active} />
         </header>
-        <section id="cont" style={{}}>
+        <section
+          id="cont"
+          style={{
+            backgroundColor: '#1ea706',
+            width: '100%',
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+          }}
+        >
           {this.props.children}
         </section>
         <footer>

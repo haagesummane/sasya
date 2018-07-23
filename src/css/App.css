@@ -1,4 +1,9 @@
 @charset 'UTF-8';
+* {
+  padding: 0;
+  margin: 0;
+}
+
 h1,
 h2,
 h3,
@@ -19,7 +24,9 @@ h4 {
   letter-spacing: 1px;
   box-shadow: none;
 }
+html,
 body {
+  height: 100%;
   font-weight: normal;
   /* font-family: Georgia, "Times New Roman", Times, serif; */
   font-family: 'Open Sans', sans-serif;
@@ -59,7 +66,7 @@ body {
   transition: all 0.5s ease;
 }
 .bs {
-  box-shadow: 0px 2px 2px #888888;
+  box-shadow: 0px 2px 2px #1ea706; /*#888888;*/
 }
 .hover-underline-menu .menu .underline-from-center:hover::after {
   left: 0;
@@ -96,4 +103,37 @@ li > a:hover:before {
   visibility: visible;
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
+}
+#cont {
+  height: 95vh;
+}
+@media only screen and (max-width: 1060px) {
+  #cont {
+    height: 90vh;
+  }
+}
+@media only screen and (max-width: 691px) {
+  #cont {
+    height: 88vh;
+  }
+}
+@media only screen and (max-width: 596px) {
+  #cont {
+    height: 82vh;
+  }
+}
+@media only screen and (max-width: 462px) {
+  #cont {
+    height: 82vh;
+  }
+}
+@media only screen and (max-width: 367px) {
+  #cont {
+    height: 76vh;
+  }
+}
+@media only screen and (max-width: 352px) {
+  #cont {
+    height: 70vh;
+  }
 }

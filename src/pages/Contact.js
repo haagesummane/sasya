@@ -8,12 +8,20 @@ class Contact extends Component {
         <div
           style={{
             width: '80%',
+            padding: '5px',
             textAlign: 'center',
-            alignContent: 'center',
           }}
         >
-          <h1>Contact Us</h1>
-          <article style={{ alignContent: 'center', display: 'flex', flexWrap: 'wrap' }}>
+          <h1> Contact Us</h1>
+          <article
+            style={{
+              margin: '0 auto',
+              alignContent: 'center',
+              display: 'flex',
+              flexWrap: 'wrap',
+              justifyContent: 'center',
+            }}
+          >
             <div style={{ flexDirection: 'column', marginRight: '10px' }}>
               <iframe
                 title="sasya nursery address"

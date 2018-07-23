@@ -105,35 +105,36 @@ li > a:hover:before {
   transform: scaleX(1);
 }
 #cont {
-  height: 95vh;
+  min-height: 95vh;
+  background-color: rgba(30, 167, 6, 0.3);
 }
 @media only screen and (max-width: 1060px) {
   #cont {
-    height: 90vh;
+    min-height: 90vh;
   }
 }
 @media only screen and (max-width: 691px) {
   #cont {
-    height: 88vh;
+    min-height: 88vh;
   }
 }
 @media only screen and (max-width: 596px) {
   #cont {
-    height: 82vh;
+    min-height: 82vh;
   }
 }
 @media only screen and (max-width: 462px) {
   #cont {
-    height: 82vh;
+    min-height: 82vh;
   }
 }
 @media only screen and (max-width: 367px) {
   #cont {
-    height: 76vh;
+    min-height: 76vh;
   }
 }
 @media only screen and (max-width: 352px) {
   #cont {
-    height: 70vh;
+    min-height: 70vh;
   }
 }

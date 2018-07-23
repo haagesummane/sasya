@@ -5,8 +5,9 @@ class Home extends Component {
   render() {
     return (
       <AppBody active={this.props.active}>
-        <div>
-          1 Home<br />2Home<br />3Home<br />4Home<br />Home<br />Home<br />Home<br />
+        <div style={{ width: '80%', textAlign: 'center' }}>
+          <h1>Welcome to Sasya Nursery</h1>
+          <article style={{ textAlign: 'justify' }}>&nbsp;</article>
         </div>
       </AppBody>
     );

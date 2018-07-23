@@ -12,7 +12,6 @@ class AppBody extends Component {
         <section
           id="cont"
           style={{
-            backgroundColor: '#1ea706',
             width: '100%',
             display: 'flex',
             justifyContent: 'center',

@@ -1,3 +1,25 @@
+.homeLogo {
+  width: 80%;
+  background: rgba(255, 255, 255, 1);
+  border-radius: 50%;
+}
+/* 
+@media screen and (max-width: 1000px) {
+ .homeLogo {
+  width: 300px;
+  background: rgba(255,255,255,1);
+  border-radius: 50%;
+}
+}
+
+@media screen and (max-width: 800px) {
+ .homeLogo {
+  width: 200px;
+  background: rgba(255,255,255,1);
+  border-radius: 50%;
+}
+} */
+
 .cb-slideshow,
 .cb-slideshow:after {
   list-style-type: none;

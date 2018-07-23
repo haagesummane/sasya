@@ -7,11 +7,7 @@ class Home extends Component {
     return (
       <AppBody active={this.props.active}>
         <div style={{ height: '60%', textAlign: 'center' }}>
-          <img
-            src={logo}
-            style={{ width: '400px', background: 'rgba(255,255,255,1)', borderRadius: '50%' }}
-            alt="Sasya Nursery"
-          />
+          <img src={logo} className="homeLogo" alt="Sasya Nursery" />
           {/* <h1> Sasya Nursery</h1> */}
           <ul className="cb-slideshow">
             <li>

@@ -4,7 +4,7 @@ import React, { Component } from 'react';
 class Plants extends Component {
   render() {
     return (
-      <AppBody>
+      <AppBody active={this.props.active}>
         <div>Plants</div>
       </AppBody>
     );

@@ -1,5 +1,7 @@
-import AppBody from 'components/AppBody';
 import React, { Component } from 'react';
+import 'css/App.css';
+import 'css/foundation.css';
+
 const routes = [
   ['/', 'Home'],
   ['/about', 'About Us'],
@@ -11,12 +13,13 @@ const routes = [
 ];
 class Nav extends Component {
   render() {
-    var cls = routes.map((r, i) => (this.props.active && this.props.active === i ? 'active' : ''));
+    var cls = Array(routes.length);
+    if (typeof this.props.active === 'number') cls[this.props.active] = 'active';
     return (
-      <div data-sticky-container>
-        <div data-sticky data-margin-top="0" id="example-menu">
-          <nav class="bs hover-underline-menu" data-menu-underline-from-center>
-            <ul class="menu align-center">
+      <div id="navdiv" style={{ top: '0px', position: 'fixed', width: '100%' }}>
+        <div style={{ top: '0px' }} id="example-menu">
+          <nav className="bs hover-underline-menu" id="data-menu-underline-from-center">
+            <ul className="menu align-center">
               {routes.map((r, i) => (
                 <li key={i} className={cls[i]}>
                   <a className="txtcase" href={r[0]}>

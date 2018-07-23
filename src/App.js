@@ -1,5 +1,4 @@
 import 'css/App.css';
-
 import ErrorBoundary from 'components/ErrorBoundary';
 import About from 'pages/About';
 import Contact from 'pages/Contact';
@@ -20,7 +19,7 @@ const routes = [
   ['/mahogany', 'Mahogany Project'],
   ['/contact', 'Contact Us'],
 ];
-const comps = [Home, About, Services, Plants, Landscape, Mahogany, Contact];
+const Components = [Home, About, Services, Plants, Landscape, Mahogany, Contact];
 
 class App extends Component {
   constructor(props) {
@@ -33,11 +32,23 @@ class App extends Component {
       <Router>
         <ErrorBoundary>
           <Switch>
-            {routes.map((r, i) => <Route key={i} exact path={r[0]} component={comps[i]} />)}
+            {Components.map(
+              (Comp, i) =>
+                i === 0 ? (
+                  <Route key={i} exact path={routes[i][0]} component={() => <Comp active={i} />} />
+                ) : (
+                  <Route key={i} path={routes[i][0]} component={() => <Comp active={i} />} />
+                )
+            )}
           </Switch>
         </ErrorBoundary>
       </Router>
     );
+  }
+  componentDidUpdate() {
+    var x = document.getElementById('cont');
+    var y = document.getElementById('navdiv');
+    if (x && y) x.style.marginTop = y.clientHeight + 5 + 'px';
   }
   updateDimensions() {
     var w = window,

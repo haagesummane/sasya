@@ -5,11 +5,13 @@ import Footer from 'components/Footer';
 class AppBody extends Component {
   render() {
     return (
-      <div>
+      <div style={{}}>
         <header>
-          <Nav />
+          <Nav active={this.props.active} />
         </header>
-        <section>{this.props.children}</section>
+        <section id="cont" style={{}}>
+          {this.props.children}
+        </section>
         <footer>
           <Footer />
         </footer>

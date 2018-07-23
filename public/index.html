@@ -7,8 +7,6 @@
   <meta name="theme-color" content="#000000">
 
   <title>Foundation for Sites</title>
-  <link rel="stylesheet" href="css/app.css">
-  <link rel="stylesheet" href="css/foundation.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
   <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
@@ -16,12 +14,20 @@
   <title>Sasya Nursery</title>
 </head>
 
-<body>
+<body onload="sm();">
   <noscript>
     You need to enable JavaScript to run this app.
   </noscript>
-  <div id="root"></div>
-
+  <div  id="root"></div>
+<script>
+  function sm()
+  {
+    var x = document.getElementById('cont');
+    var y = document.getElementById('navdiv');
+    if(x && y)
+    x.style.marginTop =(y.clientHeight+5) + 'px';
+  }
+</script>
 </body>
 
 </html>

@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import Nav from 'components/Nav';
-import Footer from 'components/Footer';
+// import Footer from 'components/Footer';
 
 class AppBody extends Component {
   render() {
     return (
-      <div style={{}}>
+      <div>
         <header>
           <Nav active={this.props.active} />
         </header>
@@ -21,9 +21,9 @@ class AppBody extends Component {
         >
           {this.props.children}
         </section>
-        <footer>
+        {/* <footer>
           <Footer />
-        </footer>
+        </footer> */}
       </div>
     );
   }

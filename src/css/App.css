@@ -26,7 +26,6 @@ h4 {
 }
 html,
 body {
-  height: 100%;
   font-weight: normal;
   /* font-family: Georgia, "Times New Roman", Times, serif; */
   font-family: 'Open Sans', sans-serif;
@@ -108,19 +107,19 @@ li > a:hover:before {
   transform: scaleX(1);
 }
 #cont {
-  min-height: 95vh;
-  background-color: rgba(30, 167, 6, 0.3);
+  min-height: 94vh;
+  background-color: rgba(30, 167, 6, 0.1);
 }
 @media only screen and (max-width: 1060px) {
-  #cont {
-    min-height: 90vh;
-  }
-}
-@media only screen and (max-width: 691px) {
   #cont {
     min-height: 88vh;
   }
 }
+/* @media only screen and (max-width: 691px) {
+  #cont {
+    min-height: 88vh;
+  }
+} */
 @media only screen and (max-width: 596px) {
   #cont {
     min-height: 82vh;

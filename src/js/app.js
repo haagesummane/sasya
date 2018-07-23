@@ -1,15 +1,23 @@
-$(document).foundation()
+$(document).foundation();
 var larr = [
-  document.getElementById('n1'), document.getElementById('n2'),
-  document.getElementById('n3'), document.getElementById('n4'),
-  document.getElementById('n5'), document.getElementById('n6'),
-  document.getElementById('n7')
+  document.getElementById('n1'),
+  document.getElementById('n2'),
+  document.getElementById('n3'),
+  document.getElementById('n4'),
+  document.getElementById('n5'),
+  document.getElementById('n6'),
+  document.getElementById('n7'),
 ];
 
-
 var liarr_names = [
-  'home', 'about', 'services', 'plants', 'landscape', 'mahogany', 'contact',
-  'footer'
+  'home',
+  'about',
+  'services',
+  'plants',
+  'landscape',
+  'mahogany',
+  'contact',
+  'footer',
 ];
 var liarr_offsets = [0, 0, 0, 0, 0, 0, 0];
 var threshold_offsets = [0, 0, 0, 0, 0, 0, 0, 0];
@@ -18,8 +26,7 @@ var i;
 
 function sa(lindex) {
   larr.map(e => e.classList.remove('active'));
-  if (lindex >= 1 && lindex <= sections)
-    larr[lindex - 1].classList.add('active');
+  if (lindex >= 1 && lindex <= sections) larr[lindex - 1].classList.add('active');
 }
 
 liarr_names.forEach(function(element) {
@@ -38,8 +45,7 @@ $(document).ready(function() {
   });
   for (i = 1; i < sections; i++)
     threshold_offsets[i] =
-        ((liarr_offsets[i].top - liarr_offsets[i - 1].top) / 2) +
-        (liarr_offsets[i - 1].top);
+      (liarr_offsets[i].top - liarr_offsets[i - 1].top) / 2 + liarr_offsets[i - 1].top;
   threshold_offsets[sections] = liarr_offsets[sections].top + 2000;
   $(window).scroll();
   $('#n1, #n2, #n3, #n4, #n5, #n6, #n7').click(function() {

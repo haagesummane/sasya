@@ -12,7 +12,7 @@ class Mahogany extends Component {
     this.state = { langIndex: 0, title: titles[0] };
   }
   changeLang(langIndex) {
-    this.setState({ langIndex: langIndex, title: titles[1] });
+    this.setState({ langIndex: langIndex, title: titles[langIndex] });
   }
   render() {
     const Comp = () => Comps[this.state.langIndex];
